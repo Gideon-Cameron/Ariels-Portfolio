@@ -2,30 +2,31 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const skillGroups = {
-  Frontend: [
-    "HTML5",
-    "CSS3",
-    "JavaScript (ES6+)",
-    "TypeScript",
-    "React.js",
-    "Tailwind CSS",
-    "Responsive Design",
-    "UI/UX Design",
+  Skills: [
+    "Brand Design & Development",
+    "Social Media Account Management",
+    "Campaign Management",
+    "Event Organization",
+    "Content Writing",
+    "Copywriting",
+    "Analytics & Statistics",
+    "Content & Account Strategy",
+    "Process Optimization",
+    "Task Coordination",
   ],
-  Backend: [
-    "Node.js",
-    "Express.js",
-    "RESTful APIs",
-    "JWT Authentication",
-    "Jest (Testing)",
-  ],
-  "Version Control & Tools": ["Git", "GitHub", "VS Code"],
+  "Social Media": ["Instagram", "TikTok", "LinkedIn", "Facebook", "WhatsApp", "Telegram"],
+  "Tools & Platforms": ["Google Workspace", "Google Docs", "HubSpot"],
 };
 
-const categories = Object.keys(skillGroups) as Array<keyof typeof skillGroups>;
+// Explicit category order
+const categories: Array<keyof typeof skillGroups> = [
+  "Skills",
+  "Social Media",
+  "Tools & Platforms",
+];
 
 const Skills = () => {
-  const [activeTab, setActiveTab] = useState<keyof typeof skillGroups>("Frontend");
+  const [activeTab, setActiveTab] = useState<keyof typeof skillGroups>("Skills");
 
   return (
     <section id="skills" className="max-w-6xl mx-auto px-6 md:px-12 py-20 md:py-24">
