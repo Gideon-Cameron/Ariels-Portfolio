@@ -2,43 +2,39 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 const experiences = {
-  Freelance: {
-    title: "Frontend Developer",
-    context: "Freelance / Self-employed",
-    date: "2023 – Present",
+  Manager: {
+    title: "Lafto Partners",
+    context: "Marketing Manager",
     points: [
-      "Built and deployed custom landing pages and portfolios using React and Tailwind.",
-      "Worked directly with clients to translate design ideas into responsive web interfaces.",
-      "Maintained accessibility and performance best practices in all projects.",
+      "During my time at Loft partners I handled the company’s social media accounts, content creation, brand voice and development, client relationship management, and analytics. Through process optimization and efficient task coordination I helped the company build a voice on social media, growing our audience by 60% within the first 4 months. With the help of strategic storytelling and analytic backed strategy, I optimized lead generation and streamlined client onboarding systems to reflect the company’s capacity.",
     ],
   },
-  Collaborative: {
-    title: "Collaborator",
-    context: "Open Source / Teams",
-    date: "2022 – 2023",
+  Specialist1: {
+    title: "Visit Oromia",
+    context: "Marketing Specialist",
     points: [
-      "Contributed to team-based projects with GitHub and version control.",
-      "Worked on frontend logic, styling, and component structure.",
-      "Participated in issue triage and feature planning in dev teams.",
+      "While working with this client, my team and I managed their social media account, growing their following by 50%. Along with covering and creating content for their many events to engage and promote their objective, my team and I also published a travel and culture magazine, from writing all included articles to traveling and organizing photoshoots for their tourism destinations. Through the work that we did and the client's own determination and grit, we together managed to get their name on the Google Arts and Culture site, a huge achievement for both of us.",
     ],
   },
-  Personal: {
-    title: "Solo Developer",
-    context: "Self-led Projects",
-    date: "Ongoing",
+  Specialist2: {
+    title: "OIPDC",
+    context: "Marketing Specialist",
     points: [
-      "Built several full-stack applications to improve personal productivity.",
-      "Explored advanced React patterns, performance optimization, and deployment pipelines.",
-      "Designed and developed high-fidelity frontend UIs with React, TypeScript, and Tailwind CSS.",
-      "Completed projects like Space Tourism and Weather App to demonstrate responsive layout, accessibility, and component-driven design.",
+      "My team and I worked with the Oromia Industrial Park Development Commission to showcase the products and manufacturing processes that took place. During this time I was involved in attracting and onboarding investors through various campaigns and published media.",
     ],
   },
+};
+
+const tabLabels: Record<keyof typeof experiences, string> = {
+  Manager: "Marketing Manager",
+  Specialist1: "Content Strategist",
+  Specialist2: "Marketing Specialist",
 };
 
 const tabs = Object.keys(experiences) as Array<keyof typeof experiences>;
 
 const Experience = () => {
-  const [activeTab, setActiveTab] = useState<keyof typeof experiences>("Freelance");
+  const [activeTab, setActiveTab] = useState<keyof typeof experiences>("Manager");
 
   return (
     <section
@@ -95,7 +91,7 @@ const Experience = () => {
                   }`}
                   onClick={() => setActiveTab(tab)}
                 >
-                  {tab}
+                  {tabLabels[tab]}
                 </button>
               </motion.li>
             ))}
