@@ -1,33 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: "class", // ✔ keep enabled for future use
+  darkMode: false, // 🚫 Disable dark mode
   theme: {
     extend: {
-      screens: {
-        nav: "738px", // 👈 Custom breakpoint for navbar collapse
-      },
       colors: {
-        // Dark mode (based on Brittany Chiang)
-        dark: {
-          background: "#0a192f",
-          textPrimary: "#ccd6f6",
-          textSecondary: "#8892b0",
-          accent: "#64ffda",
-          border: "#233554",
-        },
-        // Light mode (neutral, optional for later)
-        light: {
-          background: "#fdfdfd",
-          textPrimary: "#111827",
-          textSecondary: "#4b5563",
-          accent: "#007acc",
-          border: "#e5e7eb",
-        },
+        // 🎨 ErinOnDemand color palette
+        background: "#FDF9F7",        // soft warm background
+        surface: "#F7E7EC",           // light pink contrast section
+        primary: "#1E1E1E",           // main text color
+        secondary: "#C4C4C4",         // muted text, lines, borders
+        accent: "#D7355D",            // highlight pink for buttons/links
       },
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
         mono: ["Fira Code", "monospace"],
+      },
+      screens: {
+        nav: "738px",
       },
     },
   },
