@@ -11,12 +11,14 @@ import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="bg-background text-primary transition-colors duration-300 font-sans">
+    <div className="text-primary transition-colors duration-300 font-sans">
+
       <LeftSidebar />
       {/* <RightSidebar /> */}
       <Navbar />
 
-      <main className="pt-10 space-y-22 px-6 nav:pl-20 md:px-12">
+      <main className="pt-10 space-y-22">
+
         <section id="hero">
           <Hero />
         </section>

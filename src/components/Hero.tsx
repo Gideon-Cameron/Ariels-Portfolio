@@ -25,7 +25,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.65, duration: 0.6 }}
-        className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#5F5F5F] font-opensans max-w-2xl"
+        className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#252525] font-opensans max-w-2xl"
       >
         I'm a marketing professional who blends creativity with strategy to tell brand stories that engage, inspire,
         and drive growth. From content creation and social media to data-driven growth and brand development, I bring energy, 
