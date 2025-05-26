@@ -7,5 +7,5 @@ html {
 }
 
 body {
-  @apply bg-background text-primary transition-colors duration-300;
+  @apply bg-background text-primary font-sans transition-colors duration-300;
 }

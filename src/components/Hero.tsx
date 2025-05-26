@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-4xl mx-auto">
+    <section className="min-h-screen flex flex-col justify-center px-6 md:px-12 max-w-4xl mx-auto bg-[#F9F1EF]">
       <motion.h1
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.35, duration: 0.6 }}
-        className="text-5xl sm:text-6xl md:text-7xl font-bold text-[#1E1E1E] dark:text-[#F7E7EC] mb-2 leading-tight"
+        className="text-6xl sm:text-7xl md:text-8xl font-allura text-[#D7355D] mb-2 leading-tight"
       >
         Ariel Germond
       </motion.h1>
@@ -16,7 +16,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.6 }}
-        className="text-2xl sm:text-3xl md:text-2xl font-semibold text-[#D7355D] dark:text-[#C4C4C4] mb-6 leading-tight"
+        className="text-3xl sm:text-4xl font-tangerine text-[#D7355D] mb-6 leading-tight"
       >
         Marketing Strategist | Brand Developer | Creative Lead
       </motion.h2>
@@ -25,7 +25,7 @@ const Hero = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.65, duration: 0.6 }}
-        className="text-base sm:text-lg md:text-xl leading-relaxed text-[#1E1E1E] dark:text-[#C4C4C4] max-w-2xl"
+        className="text-lg sm:text-xl md:text-2xl leading-relaxed text-[#5F5F5F] font-opensans max-w-2xl"
       >
         I'm a marketing professional who blends creativity with strategy to tell brand stories that engage, inspire,
         and drive growth. From content creation and social media to data-driven growth and brand development, I bring energy, 
