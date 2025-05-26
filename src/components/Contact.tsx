@@ -85,7 +85,7 @@ const Contact = () => {
             <motion.form
               ref={form}
               onSubmit={sendEmail}
-              className="mt-10 bg-white p-6 rounded-lg shadow-md flex flex-col gap-4 text-left"
+              className="mt-10 bg-soft p-6 rounded-lg shadow-md flex flex-col gap-4 text-left"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0 }}
@@ -111,7 +111,7 @@ const Contact = () => {
               />
               <button
                 type="submit"
-                className="mt-2 px-6 py-2 border border-accent text-accent rounded hover:bg-accent/10 transition"
+                className="mt-2 px-6 py-2 bg-[#f5f5f5] border border-accent text-accent rounded hover:bg-accent/10 transition"
               >
                 Send Message
               </button>
