@@ -7,5 +7,5 @@ html {
 }
 
 body {
-  @apply bg-light-background text-light-textPrimary dark:bg-dark-background dark:text-dark-textPrimary transition-colors duration-300;
+  @apply bg-background text-primary transition-colors duration-300;
 }
