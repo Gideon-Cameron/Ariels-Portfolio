@@ -11,7 +11,7 @@ const experiences = {
   },
   Specialist1: {
     title: "Visit Oromia",
-    context: "Marketing Specialist",
+    context: "Content Strategist",
     points: [
       "While working with this client, my team and I managed their social media account, growing their following by 50%. Along with covering and creating content for their many events to engage and promote their objective, my team and I also published a travel and culture magazine, from writing all included articles to traveling and organizing photoshoots for their tourism destinations. Through the work that we did and the client's own determination and grit, we together managed to get their name on the Google Arts and Culture site, a huge achievement for both of us.",
     ],
