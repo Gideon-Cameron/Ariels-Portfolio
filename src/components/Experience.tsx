@@ -37,7 +37,7 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState<keyof typeof experiences>("Manager");
 
   return (
-    <section id="experience" className="bg-experienceCard w-full">
+    <section id="experience" className="bg-cream w-full">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-24">
         {/* Section Heading */}
         <motion.div
@@ -47,8 +47,8 @@ const Experience = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-experienceText font-mono whitespace-nowrap">
-            <span className="mr-2 font-mono text-accent">02.</span>
+          <h2 className="text-2xl font-bold text-experienceText font-playpen whitespace-nowrap">
+            <span className="mr-2 font-playpen text-accent">02.</span>
             Where I've Worked
           </h2>
           <div className="h-px ml-5 flex-1 max-w-[300px] bg-experienceText relative -top-[5px]" />
@@ -84,8 +84,8 @@ const Experience = () => {
                   <button
                     className={`w-full text-left px-4 py-3 transition-colors duration-200 ${
                       activeTab === tab
-                        ? "border-l-2 border-accent text-accent bg-experienceBg"
-                        : "text-experienceText hover:bg-experienceBg hover:text-accent"
+                        ? "border-l-2 border-accent text-accent bg-creamHighlight"
+                        : "text-experienceText hover:bg-creamHighlight hover:text-accent"
                     }`}
                     onClick={() => setActiveTab(tab)}
                   >

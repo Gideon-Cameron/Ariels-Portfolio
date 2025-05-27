@@ -15,11 +15,13 @@ export default {
         primary: "#1E1E1E",          // fallback for main text
         secondary: "#C4C4C4",        // for muted, border elements
         accent: "#D7355D",           // highlight pink
+        cream: "#F9F3F1",            // 🌸 New background for Experience
+        creamHighlight: "#EFE7E3", 
 
         // 🌊 Experience Section-Specific Palette (from image)
         experienceBg: "#9FB4B7",       // Muted bluish-gray (background of the left side in your image)
         experienceText: "#2E3E3E",     // Deep, balanced green-gray text color
-        experienceCard: "#C7D3D4",  
+        experienceCard: "#C7D3D4",     // 🧁 Slightly darker hover bg for tabs
       },
       fontFamily: {
         sans: ["'Open Sans'", "sans-serif"],       // body
@@ -27,6 +29,7 @@ export default {
         tangerine: ["'Tangerine'", "cursive"],     // job title
         mono: ["Fira Code", "monospace"],          // mono/terminal
         italianno: ["'Italianno'", "cursive"],     // flourish branding
+        playpen: ["'Playpen Sans'", "cursive"],
       },
       screens: {
         nav: "738px", // custom breakpoint for navbar

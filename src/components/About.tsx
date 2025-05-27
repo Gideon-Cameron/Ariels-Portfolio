@@ -24,8 +24,8 @@ const About = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.6 }}
           >
-            <h2 className="text-2xl font-bold text-chocolate font-mono whitespace-nowrap">
-              <span className="mr-2 font-mono text-accent">01.</span>
+            <h2 className="text-2xl font-bold text-chocolate font-playpen whitespace-nowrap">
+              <span className="mr-2 font-playpen text-accent">01.</span>
               About Me
             </h2>
             <div className="h-px ml-5 flex-1 max-w-[300px] bg-chocolate relative -top-[0px]" />
