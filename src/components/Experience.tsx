@@ -37,7 +37,7 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState<keyof typeof experiences>("Manager");
 
   return (
-    <section id="experience" className="bg-experienceBg w-full">
+    <section id="experience" className="bg-experienceCard w-full">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-24">
         {/* Section Heading */}
         <motion.div
@@ -84,8 +84,8 @@ const Experience = () => {
                   <button
                     className={`w-full text-left px-4 py-3 transition-colors duration-200 ${
                       activeTab === tab
-                        ? "border-l-2 border-accent text-accent bg-experienceCard"
-                        : "text-experienceText hover:bg-experienceCard hover:text-accent"
+                        ? "border-l-2 border-accent text-accent bg-experienceBg"
+                        : "text-experienceText hover:bg-experienceBg hover:text-accent"
                     }`}
                     onClick={() => setActiveTab(tab)}
                   >
