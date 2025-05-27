@@ -36,7 +36,7 @@ const About = () => {
               " Hey! My name is Ariel and I embarked on my marketing journey in 2022. When I first started out, I hit the ground running, working for a fast growing marketing start up that worked B2B on building brands for up and coming businesses as well as rebranding already existing brands.",
               "As the marketing lead in the company I worked closely with our clients to ensure that they were part of the process of finding a new, exciting voice for their brands, as well as ensuring that their vision and core values were well communicated in all content related to their company or organization.",
               "Throughout my marketing career I have worked with government organizations, focused on tourism and brand building for the region as a new and booming tourist destination. With this client and many others I worked on leading large social media campaigns, optimizing engagement, generating leads and building relationships with the communities.",
-              "In my +2 years of professional experience I have learnt that great marketing starts from trusting relationships and strong values that can be translated into relatable and engaging content.",
+              "In my 2+ years of professional experience I have learnt that great marketing starts from trusting relationships and strong values that can be translated into relatable and engaging content.",
             ].map((text, index) => (
               <motion.p
                 key={index}
