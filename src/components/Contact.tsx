@@ -23,7 +23,12 @@ const Contact = () => {
     }
 
     emailjs
-      .sendForm("service_2e9zq4f", "template_mq85xh3", form.current, "VSey23muaE28V71S_")
+      .sendForm(
+        "service_wr0w2bh",              
+        "template_mgnu61n",              
+        form.current,
+        "VSey23muaE28V71S_"             
+      )
       .then(
         () => {
           setMessageSent(true);
@@ -48,13 +53,13 @@ const Contact = () => {
           viewport={{ once: true }}
         >
           <h2 className="text-2xl font-bold text-accent font-mono whitespace-nowrap">
-            <span className="mr-2 font-mono text-accent">05.</span>
+            <span className="mr-2 font-mono text-accent">04.</span>
             What’s Next?
           </h2>
           <div className="h-px ml-5 flex-1 max-w-[300px] bg-accent relative -top-[5px]" />
         </motion.div>
 
-        {/* Description & Button */}
+        {/* Description */}
         <motion.p
           className="text-lg text-richblack mb-6 max-w-xl mx-auto font-sans"
           initial={{ opacity: 0 }}

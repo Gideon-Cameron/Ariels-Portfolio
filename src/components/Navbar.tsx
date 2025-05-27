@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import icon from "../assets/icon.png";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 
 const sections = ["About", "Experience", "Skills", "Contact"];
@@ -11,16 +10,16 @@ const Navbar = () => {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background shadow-md transition-colors duration-300">
       <nav className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <motion.img
-          src={icon}
-          alt="Logo"
-          className="w-12 h-12 cursor-pointer"
+        {/* Logo Text - 'Ariel' */}
+        <motion.span
+          className="text-3xl text-accent font-allura cursor-pointer"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
-          whileHover={{ y: -4, x: -4, rotate: -3 }}
+          whileHover={{ y: -4, x: -4, rotate: -2 }}
           transition={{ duration: 0.4, ease: "easeOut" }}
-        />
+        >
+          Ariel
+        </motion.span>
 
         {/* Desktop Navigation */}
         <motion.ul
