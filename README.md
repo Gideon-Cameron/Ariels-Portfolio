@@ -1,43 +1,37 @@
-# Gideon Cameron — Developer Portfolio 🚀
+# Ariel Germond Portfolio
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9f3c2b34-3d5e-4d89-a6e3-bcb8c3fd0a1a/deploy-status)](https://gideon-portfolio-gc.netlify.app/)
+A responsive personal portfolio site for Ariel Germond, a creative marketing professional. Built using **React**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** to showcase experience, skills, and personality with elegance and interactivity.
+
 ![GitHub last commit](https://img.shields.io/github/last-commit/Gideon-Cameron/your-repo-name?color=64ffda)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Gideon-Cameron/your-repo-name?color=007acc)
+---
 
-## 🌐 Live Site
+## ✨ Features
 
-🔗 [gideon-portfolio-gc.netlify.app](https://gideon-portfolio-gc.netlify.app/)
+- Modern responsive layout
+- Custom branding and color palette
+- Smooth animations with Framer Motion
+- Styled section intros using **Playpen Sans** font
+- Dynamic Experience and Skills sections
+- Contact form powered by **EmailJS**
+- Mobile navigation with collapsible menu
 
-## 🧩 About
+---
 
-This is my personal developer portfolio, designed and built from scratch using:
+## 🛠 Tech Stack
 
-- **React + TypeScript**
-- **Tailwind CSS**
-- Fully responsive layout
-- Dark-mode–first UI
-- Smooth scroll navigation
-- Animated project modals and section transitions
-- EmailJS-powered contact form
-
-## 🚀 Lighthouse Score (Latest Audit)
-
-| Metric          | Score |
-|------------------|-------|
-| Performance      | 98 ✅ |
-| Accessibility    | 100 ✅ |
-| Best Practices   | 100 ✅ |
-| SEO              | 100 ✅ |
-
-Audited using Chrome DevTools Lighthouse, Desktop mode.
-
-## 🖥️ Tech Stack
-
-- **React + Vite**
+- **React** (Vite)
 - **TypeScript**
 - **Tailwind CSS**
-- **EmailJS** (for contact form)
-- **Netlify** (for deployment)
+- **Framer Motion**
+- **EmailJS**
 
-## 📂 Folder Structure
+---
 
+## 🚀 Getting Started
+
+### 1. Clone the Repo
+
+```bash
+git clone https://github.com/your-username/ariel-portfolio.git
+cd ariel-portfolio
