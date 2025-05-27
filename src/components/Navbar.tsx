@@ -13,6 +13,9 @@ const Navbar = () => {
         {/* Logo Text - 'Ariel' */}
         <motion.span
           className="text-3xl text-accent font-allura cursor-pointer"
+          aria-label="Home"
+          role="link"
+          tabIndex={0}
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           whileHover={{ y: -4, x: -4, rotate: -2 }}
@@ -28,9 +31,7 @@ const Navbar = () => {
           animate="visible"
           variants={{
             visible: {
-              transition: {
-                staggerChildren: 0.1,
-              },
+              transition: { staggerChildren: 0.1 },
             },
           }}
         >
@@ -46,6 +47,7 @@ const Navbar = () => {
                 <a
                   href={`#${section.toLowerCase()}`}
                   className="group transition-colors duration-200 hover:text-accent"
+                  aria-label={`Navigate to ${section} section`}
                 >
                   <span className="text-accent mr-1 font-mono">
                     {String(index + 1).padStart(2, "0")}.
@@ -64,6 +66,7 @@ const Navbar = () => {
                 href="/resume.pdf"
                 download
                 className="px-4 py-2 rounded border border-accent text-accent hover:bg-accent/10 transition-colors duration-200"
+                aria-label="Download resume"
               >
                 Resume
               </a>
@@ -75,7 +78,7 @@ const Navbar = () => {
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="nav:hidden text-primary p-2"
-          aria-label="Toggle menu"
+          aria-label={menuOpen ? "Close menu" : "Open menu"}
         >
           {menuOpen ? <XMarkIcon className="w-6 h-6" /> : <Bars3Icon className="w-6 h-6" />}
         </button>
@@ -91,6 +94,7 @@ const Navbar = () => {
                   href={`#${section.toLowerCase()}`}
                   onClick={() => setMenuOpen(false)}
                   className="block transition-colors duration-200 hover:text-accent"
+                  aria-label={`Go to ${section} section`}
                 >
                   <span className="text-accent mr-1 font-mono">
                     {String(index + 1).padStart(2, "0")}.
@@ -105,6 +109,7 @@ const Navbar = () => {
                 download
                 onClick={() => setMenuOpen(false)}
                 className="px-4 py-2 mt-2 rounded border border-accent text-accent hover:bg-accent/10 transition-colors duration-200"
+                aria-label="Download resume"
               >
                 Resume
               </a>
