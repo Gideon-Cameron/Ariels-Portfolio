@@ -1,7 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  darkMode: false,
   theme: {
     extend: {
       colors: {
@@ -18,17 +17,17 @@ export default {
         cream: "#F9F3F1",            // 🌸 New background for Experience
         creamHighlight: "#EFE7E3", 
 
-        // 🌊 Experience Section-Specific Palette (from image)
-        experienceBg: "#9FB4B7",       // Muted bluish-gray (background of the left side in your image)
-        experienceText: "#2E3E3E",     // Deep, balanced green-gray text color
-        experienceCard: "#C7D3D4",     // 🧁 Slightly darker hover bg for tabs
+        // 🌊 Experience Section-Specific Palette
+        experienceBg: "#9FB4B7",       // Muted bluish-gray (left panel bg)
+        experienceText: "#2E3E3E",     // Balanced dark text
+        experienceCard: "#C7D3D4",     // Tab highlight bg
       },
       fontFamily: {
-        sans: ["'Open Sans'", "sans-serif"],       // body
-        allura: ["'Allura'", "cursive"],           // script for name
-        tangerine: ["'Tangerine'", "cursive"],     // job title
-        mono: ["Fira Code", "monospace"],          // mono/terminal
-        italianno: ["'Italianno'", "cursive"],     // flourish branding
+        sans: ["'Open Sans'", "sans-serif"],
+        allura: ["'Allura'", "cursive"],
+        tangerine: ["'Tangerine'", "cursive"],
+        mono: ["Fira Code", "monospace"],
+        italianno: ["'Italianno'", "cursive"],
         playpen: ["'Playpen Sans'", "cursive"],
       },
       screens: {
