@@ -52,8 +52,8 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-accent font-mono whitespace-nowrap">
-            <span className="mr-2 font-mono text-accent">04.</span>
+          <h2 className="text-2xl font-bold text-accent font-playpen whitespace-nowrap">
+            <span className="mr-2 font-playpen text-accent">04.</span>
             What’s Next?
           </h2>
           <div className="h-px ml-5 flex-1 max-w-[300px] bg-accent relative -top-[5px]" />
