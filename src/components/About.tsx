@@ -4,7 +4,7 @@ import profileImage from "../assets/profile.jpg";
 const About = () => {
   return (
     <section id="about" className="bg-soft w-full">
-      <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-24 flex flex-col md:flex-row gap-12 items-center">
+      <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-24 flex flex-col md:flex-row gap-12 items-center md:items-start">
         {/* LEFT - TEXT */}
         <motion.div
           className="md:w-3/5"
@@ -54,17 +54,17 @@ const About = () => {
 
         {/* RIGHT - IMAGE */}
         <motion.div
-          className="md:w-2/5 flex justify-center"
+          className="md:w-2/5 flex justify-center md:justify-end items-start mt-8"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <div className="relative group w-64 h-64 rounded-md overflow-hidden shadow-lg">
+          <div className="relative flex items-center justify-center w-[280px] h-[280px] rounded-md overflow-hidden shadow-lg">
             <img
               src={profileImage}
               alt="Ariel Germond"
-              className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition duration-500 rounded"
+              className="w-full h-full object-cover rounded"
             />
             <div className="absolute inset-0 border-2 border-chocolate rounded pointer-events-none" />
           </div>
