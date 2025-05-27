@@ -37,7 +37,7 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState<keyof typeof experiences>("Manager");
 
   return (
-    <section id="experience" className="bg-background w-full">
+    <section id="experience" className="bg-experienceBg w-full">
       <div className="max-w-5xl mx-auto px-6 md:px-12 py-20 md:py-24">
         {/* Section Heading */}
         <motion.div
@@ -47,11 +47,11 @@ const Experience = () => {
           transition={{ duration: 0.6, delay: 0.1 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-2xl font-bold text-accent font-mono whitespace-nowrap">
+          <h2 className="text-2xl font-bold text-experienceText font-mono whitespace-nowrap">
             <span className="mr-2 font-mono text-accent">02.</span>
             Where I've Worked
           </h2>
-          <div className="h-px ml-5 flex-1 max-w-[300px] bg-accent relative -top-[5px]" />
+          <div className="h-px ml-5 flex-1 max-w-[300px] bg-experienceText relative -top-[5px]" />
         </motion.div>
 
         {/* Layout */}
@@ -70,7 +70,7 @@ const Experience = () => {
         >
           {/* Tabs */}
           <motion.div
-            className="md:w-1/4 border-l border-secondary"
+            className="md:w-1/4 border-l border-experienceText"
             variants={{ hidden: {}, visible: {} }}
           >
             <ul className="flex md:flex-col text-sm font-mono">
@@ -84,8 +84,8 @@ const Experience = () => {
                   <button
                     className={`w-full text-left px-4 py-3 transition-colors duration-200 ${
                       activeTab === tab
-                        ? "border-l-2 border-accent text-accent bg-accent/10"
-                        : "text-secondary hover:bg-accent/5 hover:text-accent"
+                        ? "border-l-2 border-accent text-accent bg-experienceCard"
+                        : "text-experienceText hover:bg-experienceCard hover:text-accent"
                     }`}
                     onClick={() => setActiveTab(tab)}
                   >
@@ -105,11 +105,11 @@ const Experience = () => {
             exit={{ opacity: 0, y: 10 }}
             transition={{ duration: 0.5 }}
           >
-            <h3 className="text-xl font-semibold text-richblack">
+            <h3 className="text-xl font-semibold text-experienceText">
               {experiences[activeTab].title}{" "}
               <span className="text-accent">@ {experiences[activeTab].context}</span>
             </h3>
-            <ul className="list-disc ml-5 space-y-2 text-richblack mt-4">
+            <ul className="list-disc ml-5 space-y-2 text-experienceText mt-4">
               {experiences[activeTab].points.map((point, i) => (
                 <motion.li
                   key={i}
