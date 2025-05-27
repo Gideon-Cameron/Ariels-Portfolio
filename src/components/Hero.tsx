@@ -9,7 +9,7 @@ const Hero = () => {
         transition={{ delay: 0.35, duration: 0.6 }}
         className="text-6xl sm:text-7xl md:text-8xl font-allura text-[#D7355D] mb-2 leading-tight"
       >
-        Ariel Germond
+        Ariel Candace
       </motion.h1>
 
       <motion.h2
