@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FaTelegram, FaWhatsapp, FaEnvelope } from "react-icons/fa";
+import { FaTelegram, FaWhatsapp, FaLinkedin, } from "react-icons/fa";
 
 const LeftSidebar = () => {
   const icons = [
@@ -16,10 +16,10 @@ const LeftSidebar = () => {
       label: "WhatsApp",
     },
     {
-      id: 3,
-      href: "#contact",
-      icon: <FaEnvelope className="w-5 h-5" />,
-      label: "Email",
+      id: 2,
+      href: "https://www.linkedin.com/in/ariel-candace-646494272/",
+      icon: <FaLinkedin className="w-5 h-5" />,
+      label: "LinkedIn",
     },
   ];
 
